@@ -1,10 +1,11 @@
-import './App.css';
-import Timer from './assets/components/Timer';
+import "./App.css";
+import Timer from "./assets/components/Timer";
 
 function App() {
-
-  return <></>;
-  
+  return;
+  <>
+    <Timer />
+  </>;
 }
 
 export default App;
