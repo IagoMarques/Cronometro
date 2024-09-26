@@ -46,6 +46,7 @@ const Timer = () => {
     <div className="timer-container">
       <TimerDisplay time={formatTime()} />
       <TimerControls
+        timerOn={timerOn}
         onStart={() => setTimerOn(true)}
         onStop={() => setTimerOn(false)}
       />

@@ -1,9 +1,11 @@
 import React from "react";
 
-const TimerControls = ({ onStart, onStop }) => {
+const TimerControls = ({ timerOn, onStart, onStop }) => {
   return (
     <div className="timer-controls">
-      <button onClick={onStart}>Iniciar</button>
+      {!timerOn && <button onClick={onStart}>Iniciar</button>}
+      {timerOn && <button onClick={onStop}>Parar</button>}
+      {timerOn && <button onClick={onStart}>Voltar</button>}
       <button onClick={onStop}>Zerar</button>
     </div>
   );
