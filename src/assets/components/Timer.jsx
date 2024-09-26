@@ -25,7 +25,6 @@ const Timer = () => {
   };
 
   const stopTimer = (interval) => {
-    console.log("chegou aqui");
     clearInterval(interval);
     return interval;
   };
@@ -46,7 +45,6 @@ const Timer = () => {
     <div className="timer-container">
       <TimerDisplay time={formatTime()} />
       <TimerControls
-        timerOn={timerOn}
         onStart={() => setTimerOn(true)}
         onStop={() => setTimerOn(false)}
       />
